@@ -37,7 +37,7 @@ public interface UserAuthService extends IService<UserAuth> {
      * @param accessToken qq token
      * @return 用户登录信息
      */
-    UserInfoDTO qqLogin(String openId, String accessToken);
+    //UserInfoDTO qqLogin(String openId, String accessToken);
 
     /**
      * 微博登录
@@ -45,7 +45,7 @@ public interface UserAuthService extends IService<UserAuth> {
      * @param code 微博code
      * @return 用户登录信息
      */
-    UserInfoDTO weiBoLogin(String code);
+   // UserInfoDTO weiBoLogin(String code);
 
     /**
      * 修改密码

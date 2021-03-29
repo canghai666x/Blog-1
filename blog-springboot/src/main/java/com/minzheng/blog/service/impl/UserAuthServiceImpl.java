@@ -223,7 +223,7 @@ public class UserAuthServiceImpl extends ServiceImpl<UserAuthDao, UserAuth> impl
         List<UserBackDTO> userBackDTOList = userAuthDao.listUsers(condition);
         return new PageDTO<>(userBackDTOList, count);
     }
-
+    /*
     @Transactional(rollbackFor = Exception.class)
     @Override
     public UserInfoDTO qqLogin(String openId, String accessToken) {
@@ -261,7 +261,7 @@ public class UserAuthServiceImpl extends ServiceImpl<UserAuthDao, UserAuth> impl
         SecurityContextHolder.getContext().setAuthentication(auth);
         return userInfoDTO;
     }
-
+    */
     /**
      * 绑定用户角色
      *
@@ -274,7 +274,7 @@ public class UserAuthServiceImpl extends ServiceImpl<UserAuthDao, UserAuth> impl
                 .build();
         userRoleDao.insert(userRole);
     }
-
+    /**
     @Transactional(rollbackFor = ServeException.class)
     @Override
     public UserInfoDTO weiBoLogin(String code) {
@@ -325,7 +325,7 @@ public class UserAuthServiceImpl extends ServiceImpl<UserAuthDao, UserAuth> impl
         SecurityContextHolder.getContext().setAuthentication(auth);
         return userInfoDTO;
     }
-
+    */
     /**
      * 封装用户信息
      *
